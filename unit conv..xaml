@@ -1,0 +1,429 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="unit_conv_" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1038.4,1824" sap2010:WorkflowViewState.IdRef="unit_conv__1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="unit_conv_" sap:VirtualizedContainerService.HintSize="700.8,1659.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="659.2,1566.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.unitconverters.net/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,1464" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="584,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="07a432c1-fce8-498e-9611-f1c05508e515" InformativeScreenshot="8109728079c4a34fce199e39941b0bf6" Selector="&lt;webctrl parentid='occontent' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /currency-converter....'" sap:VirtualizedContainerService.HintSize="584,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b70c583-f65e-4d35-b932-c8835283091e" InformativeScreenshot="db3159982bf411d5eae90e7591b4b342" Selector="&lt;webctrl aaname='Currency' parentid='ocsubnav' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'chrome.exe Currency'" sap:VirtualizedContainerService.HintSize="584,891.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="02da8d0d87b286ae7b2102e75c2ec61b" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Currency Converter - Google Chrome' /&gt;">
+              <ui:WindowScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="550.4,744" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="508.8,651.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="unit conv. workbook.xlsx">
+                      <ui:ExcelApplicationScope.Body>
+                        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,541.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="output" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:ExcelReadRange DataTable="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+                              <ui:ExcelReadRange.Range>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </ui:ExcelReadRange.Range>
+                            </ui:ExcelReadRange>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,348.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,228" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  ucfromunit'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="USD [United States Dollar]">
+                                      <ui:SelectItem.Items>
+                                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                                          <x:String>USD [United States Dollar]</x:String>
+                                          <x:String>EUR [Euro]</x:String>
+                                          <x:String>AUD [Australian Dollar]</x:String>
+                                          <x:String>CAD [Canadian Dollar]</x:String>
+                                          <x:String>CHF [Swiss Franc]</x:String>
+                                          <x:String>CNY [Chinese Yuan]</x:String>
+                                          <x:String>EUR [Euro]</x:String>
+                                          <x:String>GBP [British Pound Sterling]</x:String>
+                                          <x:String>INR [Indian Rupee]</x:String>
+                                          <x:String>JPY [Japanese Yen]</x:String>
+                                          <x:String>MXN [Mexican Peso]</x:String>
+                                          <x:String>AED [United Arab Emirates Dirham]</x:String>
+                                          <x:String>AFN [Afghan Afghani]</x:String>
+                                          <x:String>ALL [Albanian Lek]</x:String>
+                                          <x:String>AMD [Armenian Dram]</x:String>
+                                          <x:String>ANG [Netherlands Antillean Guilder]</x:String>
+                                          <x:String>AOA [Angolan Kwanza]</x:String>
+                                          <x:String>ARS [Argentine Peso]</x:String>
+                                          <x:String>AWG [Aruban Florin]</x:String>
+                                          <x:String>AZN [Azerbaijani Manat]</x:String>
+                                          <x:String>BAM [Bosnia-Herzegovina Convertible Mark]</x:String>
+                                          <x:String>BBD [Barbadian Dollar]</x:String>
+                                          <x:String>BDT [Bangladeshi Taka]</x:String>
+                                          <x:String>BGN [Bulgarian Lev]</x:String>
+                                          <x:String>BHD [Bahraini Dinar]</x:String>
+                                          <x:String>BIF [Burundian Franc]</x:String>
+                                          <x:String>BMD [Bermudan Dollar]</x:String>
+                                          <x:String>BND [Brunei Dollar]</x:String>
+                                          <x:String>BOB [Bolivian Boliviano]</x:String>
+                                          <x:String>BRL [Brazilian Real]</x:String>
+                                          <x:String>BSD [Bahamian Dollar]</x:String>
+                                          <x:String>BTC [Bitcoin]</x:String>
+                                          <x:String>BTN [Bhutanese Ngultrum]</x:String>
+                                          <x:String>BWP [Botswanan Pula]</x:String>
+                                          <x:String>BYN [Belarusian Ruble]</x:String>
+                                          <x:String>BZD [Belize Dollar]</x:String>
+                                          <x:String>CDF [Congolese Franc]</x:String>
+                                          <x:String>CLF [Chilean Unit of Account (UF)]</x:String>
+                                          <x:String>CLP [Chilean Peso]</x:String>
+                                          <x:String>CNH [Chinese Yuan (Offshore)]</x:String>
+                                          <x:String>COP [Colombian Peso]</x:String>
+                                          <x:String>CRC [Costa Rican Colón]</x:String>
+                                          <x:String>CUC [Cuban Convertible Peso]</x:String>
+                                          <x:String>CUP [Cuban Peso]</x:String>
+                                          <x:String>CVE [Cape Verdean Escudo]</x:String>
+                                          <x:String>CZK [Czech Republic Koruna]</x:String>
+                                          <x:String>DJF [Djiboutian Franc]</x:String>
+                                          <x:String>DKK [Danish Krone]</x:String>
+                                          <x:String>DOP [Dominican Peso]</x:String>
+                                          <x:String>DZD [Algerian Dinar]</x:String>
+                                        </scg:List>
+                                      </ui:SelectItem.Items>
+                                      <ui:SelectItem.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d739ad69-75f8-44e4-96e0-2b86e176500d" InformativeScreenshot="6fed42a3856b457b225b6eabef9870df" Selector="&lt;webctrl tag='SELECT' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SelectItem.Target>
+                                    </ui:SelectItem>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ExcelApplicationScope.Body>
+                    </ui:ExcelApplicationScope>
+                  </Sequence>
+                </ActivityAction>
+              </ui:WindowScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:WindowScope>
+            <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="584,145.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:GenericValue" Name="InputUcto" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'CurrencyC Page'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="679fd126e11f85825f2245500df1d338" Selector="&lt;html app='chrome.exe' title='Currency Converter' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,550.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  ucfromunit'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="INR [Indian Rupee]">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="50">
+                            <x:String>USD [United States Dollar]</x:String>
+                            <x:String>EUR [Euro]</x:String>
+                            <x:String>AUD [Australian Dollar]</x:String>
+                            <x:String>CAD [Canadian Dollar]</x:String>
+                            <x:String>CHF [Swiss Franc]</x:String>
+                            <x:String>CNY [Chinese Yuan]</x:String>
+                            <x:String>EUR [Euro]</x:String>
+                            <x:String>GBP [British Pound Sterling]</x:String>
+                            <x:String>INR [Indian Rupee]</x:String>
+                            <x:String>JPY [Japanese Yen]</x:String>
+                            <x:String>MXN [Mexican Peso]</x:String>
+                            <x:String>AED [United Arab Emirates Dirham]</x:String>
+                            <x:String>AFN [Afghan Afghani]</x:String>
+                            <x:String>ALL [Albanian Lek]</x:String>
+                            <x:String>AMD [Armenian Dram]</x:String>
+                            <x:String>ANG [Netherlands Antillean Guilder]</x:String>
+                            <x:String>AOA [Angolan Kwanza]</x:String>
+                            <x:String>ARS [Argentine Peso]</x:String>
+                            <x:String>AWG [Aruban Florin]</x:String>
+                            <x:String>AZN [Azerbaijani Manat]</x:String>
+                            <x:String>BAM [Bosnia-Herzegovina Convertible Mark]</x:String>
+                            <x:String>BBD [Barbadian Dollar]</x:String>
+                            <x:String>BDT [Bangladeshi Taka]</x:String>
+                            <x:String>BGN [Bulgarian Lev]</x:String>
+                            <x:String>BHD [Bahraini Dinar]</x:String>
+                            <x:String>BIF [Burundian Franc]</x:String>
+                            <x:String>BMD [Bermudan Dollar]</x:String>
+                            <x:String>BND [Brunei Dollar]</x:String>
+                            <x:String>BOB [Bolivian Boliviano]</x:String>
+                            <x:String>BRL [Brazilian Real]</x:String>
+                            <x:String>BSD [Bahamian Dollar]</x:String>
+                            <x:String>BTC [Bitcoin]</x:String>
+                            <x:String>BTN [Bhutanese Ngultrum]</x:String>
+                            <x:String>BWP [Botswanan Pula]</x:String>
+                            <x:String>BYN [Belarusian Ruble]</x:String>
+                            <x:String>BZD [Belize Dollar]</x:String>
+                            <x:String>CDF [Congolese Franc]</x:String>
+                            <x:String>CLF [Chilean Unit of Account (UF)]</x:String>
+                            <x:String>CLP [Chilean Peso]</x:String>
+                            <x:String>CNH [Chinese Yuan (Offshore)]</x:String>
+                            <x:String>COP [Colombian Peso]</x:String>
+                            <x:String>CRC [Costa Rican Colón]</x:String>
+                            <x:String>CUC [Cuban Convertible Peso]</x:String>
+                            <x:String>CUP [Cuban Peso]</x:String>
+                            <x:String>CVE [Cape Verdean Escudo]</x:String>
+                            <x:String>CZK [Czech Republic Koruna]</x:String>
+                            <x:String>DJF [Djiboutian Franc]</x:String>
+                            <x:String>DKK [Danish Krone]</x:String>
+                            <x:String>DOP [Dominican Peso]</x:String>
+                            <x:String>DZD [Algerian Dinar]</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93e31ec0-8533-4047-acf0-ec9c8977add2" InformativeScreenshot="31cfa2b225620701c15548daf1abd1b2" Selector="&lt;webctrl tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  uctounit'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="CHF [Swiss Franc] (0.692520691)">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="50">
+                            <x:String>USD [United States Dollar] (0.75184992)</x:String>
+                            <x:String>EUR [Euro] (0.6336703903)</x:String>
+                            <x:String>AUD [Australian Dollar] (0.9984273716)</x:String>
+                            <x:String>CAD [Canadian Dollar] (0.9259971577)</x:String>
+                            <x:String>CHF [Swiss Franc] (0.692520691)</x:String>
+                            <x:String>CNY [Chinese Yuan] (4.8667245323)</x:String>
+                            <x:String>EUR [Euro] (0.6336703903)</x:String>
+                            <x:String>GBP [British Pound Sterling] (0.5439318394)</x:String>
+                            <x:String>INR [Indian Rupee] (56)</x:String>
+                            <x:String>JPY [Japanese Yen] (83.481655869)</x:String>
+                            <x:String>MXN [Mexican Peso] (14.865914951)</x:String>
+                            <x:String>AED [United Arab Emirates Dirham] (2.7616199412)</x:String>
+                            <x:String>AFN [Afghan Afghani] (59.584027217)</x:String>
+                            <x:String>ALL [Albanian Lek] (77.681654768)</x:String>
+                            <x:String>AMD [Armenian Dram] (373.26338272)</x:String>
+                            <x:String>ANG [Netherlands Antillean Guilder] (1.3452820545)</x:String>
+                            <x:String>AOA [Angolan Kwanza] (484.94319841)</x:String>
+                            <x:String>ARS [Argentine Peso] (71.771537728)</x:String>
+                            <x:String>AWG [Aruban Florin] (1.3535178185)</x:String>
+                            <x:String>AZN [Azerbaijani Manat] (1.2787501032)</x:String>
+                            <x:String>BAM [Bosnia-Herzegovina Convertible Mark] (1.2393516637)</x:String>
+                            <x:String>BBD [Barbadian Dollar] (1.50369984)</x:String>
+                            <x:String>BDT [Bangladeshi Taka] (63.587494212)</x:String>
+                            <x:String>BGN [Bulgarian Lev] (1.2394306079)</x:String>
+                            <x:String>BHD [Bahraini Dinar] (0.2834406532)</x:String>
+                            <x:String>BIF [Burundian Franc] (1485.9114611)</x:String>
+                            <x:String>BMD [Bermudan Dollar] (0.75184992)</x:String>
+                            <x:String>BND [Brunei Dollar] (1.0124786948)</x:String>
+                            <x:String>BOB [Bolivian Boliviano] (5.1824729284)</x:String>
+                            <x:String>BRL [Brazilian Real] (3.8033621386)</x:String>
+                            <x:String>BSD [Bahamian Dollar] (0.75184992)</x:String>
+                            <x:String>BTC [Bitcoin] (0.0000212078)</x:String>
+                            <x:String>BTN [Bhutanese Ngultrum] (56.001127775)</x:String>
+                            <x:String>BWP [Botswanan Pula] (8.2357504905)</x:String>
+                            <x:String>BYN [Belarusian Ruble] (1.9053200229)</x:String>
+                            <x:String>BZD [Belize Dollar] (1.5106702406)</x:String>
+                            <x:String>CDF [Congolese Franc] (1489.9093351)</x:String>
+                            <x:String>CLF [Chilean Unit of Account (UF)] (0.0200450707)</x:String>
+                            <x:String>CLP [Chilean Peso] (553.09898311)</x:String>
+                            <x:String>CNH [Chinese Yuan (Offshore)] (4.869280822)</x:String>
+                            <x:String>COP [Colombian Peso] (2831.4293942)</x:String>
+                            <x:String>CRC [Costa Rican Colón] (464.7650901)</x:String>
+                            <x:String>CUC [Cuban Convertible Peso] (0.75184992)</x:String>
+                            <x:String>CUP [Cuban Peso] (19.36013544)</x:String>
+                            <x:String>CVE [Cape Verdean Escudo] (70.260375025)</x:String>
+                            <x:String>CZK [Czech Republic Koruna] (16.204320586)</x:String>
+                            <x:String>DJF [Djiboutian Franc] (133.41931704)</x:String>
+                            <x:String>DKK [Danish Krone] (4.7118246525)</x:String>
+                            <x:String>DOP [Dominican Peso] (42.732761578)</x:String>
+                            <x:String>DZD [Algerian Dinar] (100.99599976)</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d1aff0a-0a0b-497f-9ef4-eedd4551e877" InformativeScreenshot="ebc630592789a7244e875794cbc3062b" Selector="&lt;webctrl id='uctounit' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'INPUT  ucto'" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="590224cb-16d8-443b-b551-a3c8a32c7cc5" InformativeScreenshot="bd0a01365db085b6b11dc4d1e13005f7" Selector="&lt;webctrl id='ucto' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="ui:GenericValue">[InputUcto]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
